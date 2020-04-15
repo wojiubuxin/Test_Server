@@ -29,7 +29,7 @@ public:
 	~logfile();
 	std::string GetTag(bool flag = false);
 	void Open();
-	void PrintLog(const char *p, ...);
+	void DebugPrintf(const char *p, ...);
 	void Close();
 private:
 	FILE* m_fp;
@@ -64,7 +64,7 @@ void logfile::Open()
 
 }
 
-void logfile::PrintLog(const char *p, ...)
+void logfile::DebugPrintf(const char *p, ...)
 {
 	if (m_fp != NULL)
 	{
