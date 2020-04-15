@@ -1,1 +1,1 @@
-simple_log
+simple_test_server
